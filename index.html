@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Compteur</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="zone">
+  <div class="ring">
+    <svg viewBox="0 0 200 200" aria-hidden="true">
+      <circle class="t" cx="100" cy="100" r="95"/>
+      <circle class="p" id="p" cx="100" cy="100" r="95"/>
+    </svg>
+    <div id="n" aria-live="polite">0</div>
+  </div>
+  <p class="hint">clic</p>
+  <div class="bar">
+    <button id="undo">Retirer 1</button>
+    <button id="reset">Remettre à zéro</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
